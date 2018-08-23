@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C3FF958212F697500740D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF957212F697500740D00 /* AppDelegate.swift */; };
+		7C3FF95A212F697500740D00 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF959212F697500740D00 /* GameViewController.swift */; };
+		7C3FF95D212F697500740D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF95B212F697500740D00 /* Main.storyboard */; };
+		7C3FF960212F697500740D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF95E212F697500740D00 /* LaunchScreen.storyboard */; };
+		7C3FF969212F697500740D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF968212F697500740D00 /* AppDelegate.swift */; };
+		7C3FF96B212F697500740D00 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF96A212F697500740D00 /* GameViewController.swift */; };
+		7C3FF96E212F697500740D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF96C212F697500740D00 /* Main.storyboard */; };
+		7C3FF977212F697600740D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF976212F697600740D00 /* AppDelegate.swift */; };
+		7C3FF979212F697600740D00 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF978212F697600740D00 /* GameViewController.swift */; };
+		7C3FF97C212F697600740D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF97A212F697600740D00 /* Main.storyboard */; };
+		7C3FF97E212F697600740D00 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF94C212F697300740D00 /* Shaders.metal */; };
+		7C3FF97F212F697600740D00 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF94C212F697300740D00 /* Shaders.metal */; };
+		7C3FF980212F697600740D00 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF94C212F697300740D00 /* Shaders.metal */; };
+		7C3FF981212F697600740D00 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF94D212F697300740D00 /* Renderer.swift */; };
+		7C3FF982212F697600740D00 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF94D212F697300740D00 /* Renderer.swift */; };
+		7C3FF983212F697600740D00 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF94D212F697300740D00 /* Renderer.swift */; };
+		7C3FF984212F697600740D00 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94E212F697300740D00 /* ShaderTypes.h */; };
+		7C3FF985212F697600740D00 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94E212F697300740D00 /* ShaderTypes.h */; };
+		7C3FF986212F697600740D00 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94E212F697300740D00 /* ShaderTypes.h */; };
+		7C3FF987212F697600740D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94F212F697500740D00 /* Assets.xcassets */; };
+		7C3FF988212F697600740D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94F212F697500740D00 /* Assets.xcassets */; };
+		7C3FF989212F697600740D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94F212F697500740D00 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C3FF94C212F697300740D00 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		7C3FF94D212F697300740D00 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		7C3FF94E212F697300740D00 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		7C3FF94F212F697500740D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C3FF954212F697500740D00 /* Mandelbrot Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mandelbrot Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3FF957212F697500740D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C3FF959212F697500740D00 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7C3FF95C212F697500740D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C3FF95F212F697500740D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C3FF961212F697500740D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C3FF966212F697500740D00 /* Mandelbrot Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mandelbrot Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3FF968212F697500740D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C3FF96A212F697500740D00 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7C3FF96D212F697500740D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C3FF96F212F697500740D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C3FF974212F697600740D00 /* Mandelbrot Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mandelbrot Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3FF976212F697600740D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C3FF978212F697600740D00 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7C3FF97B212F697600740D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C3FF97D212F697600740D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C3FF951212F697500740D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3FF963212F697500740D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3FF971212F697600740D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C3FF946212F697300740D00 = {
+			isa = PBXGroup;
+			children = (
+				7C3FF94B212F697300740D00 /* Mandelbrot Explorer Shared */,
+				7C3FF956212F697500740D00 /* Mandelbrot Explorer iOS */,
+				7C3FF967212F697500740D00 /* Mandelbrot Explorer tvOS */,
+				7C3FF975212F697600740D00 /* Mandelbrot Explorer macOS */,
+				7C3FF955212F697500740D00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C3FF94B212F697300740D00 /* Mandelbrot Explorer Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7C3FF94C212F697300740D00 /* Shaders.metal */,
+				7C3FF94D212F697300740D00 /* Renderer.swift */,
+				7C3FF94E212F697300740D00 /* ShaderTypes.h */,
+				7C3FF94F212F697500740D00 /* Assets.xcassets */,
+			);
+			path = "Mandelbrot Explorer Shared";
+			sourceTree = "<group>";
+		};
+		7C3FF955212F697500740D00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C3FF954212F697500740D00 /* Mandelbrot Explorer.app */,
+				7C3FF966212F697500740D00 /* Mandelbrot Explorer.app */,
+				7C3FF974212F697600740D00 /* Mandelbrot Explorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C3FF956212F697500740D00 /* Mandelbrot Explorer iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C3FF957212F697500740D00 /* AppDelegate.swift */,
+				7C3FF959212F697500740D00 /* GameViewController.swift */,
+				7C3FF95B212F697500740D00 /* Main.storyboard */,
+				7C3FF95E212F697500740D00 /* LaunchScreen.storyboard */,
+				7C3FF961212F697500740D00 /* Info.plist */,
+			);
+			path = "Mandelbrot Explorer iOS";
+			sourceTree = "<group>";
+		};
+		7C3FF967212F697500740D00 /* Mandelbrot Explorer tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C3FF968212F697500740D00 /* AppDelegate.swift */,
+				7C3FF96A212F697500740D00 /* GameViewController.swift */,
+				7C3FF96C212F697500740D00 /* Main.storyboard */,
+				7C3FF96F212F697500740D00 /* Info.plist */,
+			);
+			path = "Mandelbrot Explorer tvOS";
+			sourceTree = "<group>";
+		};
+		7C3FF975212F697600740D00 /* Mandelbrot Explorer macOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C3FF976212F697600740D00 /* AppDelegate.swift */,
+				7C3FF978212F697600740D00 /* GameViewController.swift */,
+				7C3FF97A212F697600740D00 /* Main.storyboard */,
+				7C3FF97D212F697600740D00 /* Info.plist */,
+			);
+			path = "Mandelbrot Explorer macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C3FF953212F697500740D00 /* Mandelbrot Explorer iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3FF98C212F697600740D00 /* Build configuration list for PBXNativeTarget "Mandelbrot Explorer iOS" */;
+			buildPhases = (
+				7C3FF950212F697500740D00 /* Sources */,
+				7C3FF951212F697500740D00 /* Frameworks */,
+				7C3FF952212F697500740D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mandelbrot Explorer iOS";
+			productName = "Mandelbrot Explorer iOS";
+			productReference = 7C3FF954212F697500740D00 /* Mandelbrot Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C3FF965212F697500740D00 /* Mandelbrot Explorer tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3FF98F212F697600740D00 /* Build configuration list for PBXNativeTarget "Mandelbrot Explorer tvOS" */;
+			buildPhases = (
+				7C3FF962212F697500740D00 /* Sources */,
+				7C3FF963212F697500740D00 /* Frameworks */,
+				7C3FF964212F697500740D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mandelbrot Explorer tvOS";
+			productName = "Mandelbrot Explorer tvOS";
+			productReference = 7C3FF966212F697500740D00 /* Mandelbrot Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C3FF973212F697600740D00 /* Mandelbrot Explorer macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C3FF992212F697600740D00 /* Build configuration list for PBXNativeTarget "Mandelbrot Explorer macOS" */;
+			buildPhases = (
+				7C3FF970212F697600740D00 /* Sources */,
+				7C3FF971212F697600740D00 /* Frameworks */,
+				7C3FF972212F697600740D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mandelbrot Explorer macOS";
+			productName = "Mandelbrot Explorer macOS";
+			productReference = 7C3FF974212F697600740D00 /* Mandelbrot Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C3FF947212F697300740D00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Joseph Utecht";
+				TargetAttributes = {
+					7C3FF953212F697500740D00 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7C3FF965212F697500740D00 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7C3FF973212F697600740D00 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 7C3FF94A212F697300740D00 /* Build configuration list for PBXProject "Mandelbrot Explorer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C3FF946212F697300740D00;
+			productRefGroup = 7C3FF955212F697500740D00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C3FF953212F697500740D00 /* Mandelbrot Explorer iOS */,
+				7C3FF965212F697500740D00 /* Mandelbrot Explorer tvOS */,
+				7C3FF973212F697600740D00 /* Mandelbrot Explorer macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C3FF952212F697500740D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FF984212F697600740D00 /* ShaderTypes.h in Resources */,
+				7C3FF95D212F697500740D00 /* Main.storyboard in Resources */,
+				7C3FF987212F697600740D00 /* Assets.xcassets in Resources */,
+				7C3FF960212F697500740D00 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3FF964212F697500740D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FF96E212F697500740D00 /* Main.storyboard in Resources */,
+				7C3FF988212F697600740D00 /* Assets.xcassets in Resources */,
+				7C3FF985212F697600740D00 /* ShaderTypes.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3FF972212F697600740D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FF97C212F697600740D00 /* Main.storyboard in Resources */,
+				7C3FF989212F697600740D00 /* Assets.xcassets in Resources */,
+				7C3FF986212F697600740D00 /* ShaderTypes.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C3FF950212F697500740D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FF981212F697600740D00 /* Renderer.swift in Sources */,
+				7C3FF97E212F697600740D00 /* Shaders.metal in Sources */,
+				7C3FF95A212F697500740D00 /* GameViewController.swift in Sources */,
+				7C3FF958212F697500740D00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3FF962212F697500740D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FF982212F697600740D00 /* Renderer.swift in Sources */,
+				7C3FF97F212F697600740D00 /* Shaders.metal in Sources */,
+				7C3FF96B212F697500740D00 /* GameViewController.swift in Sources */,
+				7C3FF969212F697500740D00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3FF970212F697600740D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3FF983212F697600740D00 /* Renderer.swift in Sources */,
+				7C3FF980212F697600740D00 /* Shaders.metal in Sources */,
+				7C3FF979212F697600740D00 /* GameViewController.swift in Sources */,
+				7C3FF977212F697600740D00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C3FF95B212F697500740D00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3FF95C212F697500740D00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C3FF95E212F697500740D00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3FF95F212F697500740D00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7C3FF96C212F697500740D00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3FF96D212F697500740D00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C3FF97A212F697600740D00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3FF97B212F697600740D00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C3FF98A212F697600740D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C3FF98B212F697600740D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7C3FF98D212F697600740D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JBE8PT36H;
+				INFOPLIST_FILE = "Mandelbrot Explorer iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spacegoats.Mandelbrot-Explorer";
+				PRODUCT_NAME = "Mandelbrot Explorer";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mandelbrot Explorer Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C3FF98E212F697600740D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JBE8PT36H;
+				INFOPLIST_FILE = "Mandelbrot Explorer iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spacegoats.Mandelbrot-Explorer";
+				PRODUCT_NAME = "Mandelbrot Explorer";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mandelbrot Explorer Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C3FF990212F697600740D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JBE8PT36H;
+				INFOPLIST_FILE = "Mandelbrot Explorer tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spacegoats.Mandelbrot-Explorer";
+				PRODUCT_NAME = "Mandelbrot Explorer";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mandelbrot Explorer Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		7C3FF991212F697600740D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JBE8PT36H;
+				INFOPLIST_FILE = "Mandelbrot Explorer tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "spacegoats.Mandelbrot-Explorer";
+				PRODUCT_NAME = "Mandelbrot Explorer";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mandelbrot Explorer Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C3FF993212F697600740D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9JBE8PT36H;
+				INFOPLIST_FILE = "Mandelbrot Explorer macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "spacegoats.Mandelbrot-Explorer";
+				PRODUCT_NAME = "Mandelbrot Explorer";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mandelbrot Explorer Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		7C3FF994212F697600740D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9JBE8PT36H;
+				INFOPLIST_FILE = "Mandelbrot Explorer macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "spacegoats.Mandelbrot-Explorer";
+				PRODUCT_NAME = "Mandelbrot Explorer";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mandelbrot Explorer Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C3FF94A212F697300740D00 /* Build configuration list for PBXProject "Mandelbrot Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FF98A212F697600740D00 /* Debug */,
+				7C3FF98B212F697600740D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C3FF98C212F697600740D00 /* Build configuration list for PBXNativeTarget "Mandelbrot Explorer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FF98D212F697600740D00 /* Debug */,
+				7C3FF98E212F697600740D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C3FF98F212F697600740D00 /* Build configuration list for PBXNativeTarget "Mandelbrot Explorer tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FF990212F697600740D00 /* Debug */,
+				7C3FF991212F697600740D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C3FF992212F697600740D00 /* Build configuration list for PBXNativeTarget "Mandelbrot Explorer macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FF993212F697600740D00 /* Debug */,
+				7C3FF994212F697600740D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C3FF947212F697300740D00 /* Project object */;
+}
