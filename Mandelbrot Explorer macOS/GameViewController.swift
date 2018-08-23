@@ -18,10 +18,11 @@ class GameViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let mtkView = self.view as? MTKView else {
+        guard let mtkViewTemp = self.view as? MTKView else {
             print("View attached to GameViewController is not an MTKView")
             return
         }
+        mtkView = mtkViewTemp
 
         // Select the device to render with.  We choose the default device
         guard let defaultDevice = MTLCreateSystemDefaultDevice() else {
@@ -31,7 +32,7 @@ class GameViewController: NSViewController {
 
         mtkView.device = defaultDevice
 
-        guard let newRenderer = Renderer(metalKitView: mtkView) else {
+        guard let newRenderer = Renderer(mtkView: mtkView) else {
             print("Renderer cannot be initialized")
             return
         }
@@ -41,5 +42,20 @@ class GameViewController: NSViewController {
         renderer.mtkView(mtkView, drawableSizeWillChange: mtkView.drawableSize)
 
         mtkView.delegate = renderer
+    }
+    
+    override func magnify(with event: NSEvent) {
+        let x = Float(event.locationInWindow.x * 2) / Float(mtkView.drawableSize.width)
+        let y = Float(event.locationInWindow.y * 2) / Float(mtkView.drawableSize.height)
+        renderer.zoom(center: [x, 1 - y], speed: Float(event.magnification))
+    }
+    
+    override func scrollWheel(with event: NSEvent) {
+        renderer.pan(pan_x: event.deltaX, pan_y: event.deltaY)
+    }
+    
+    @IBAction func toggle_rotation(_ sender: NSMenuItem) {
+        renderer.should_rotate = !renderer.should_rotate
+        sender.isEnabled = renderer.should_rotate
     }
 }

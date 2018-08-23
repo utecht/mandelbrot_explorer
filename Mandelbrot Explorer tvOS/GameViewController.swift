@@ -18,10 +18,11 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let mtkView = self.view as? MTKView else {
+        guard let mtkViewTemp = self.view as? MTKView else {
             print("View of Gameview controller is not an MTKView")
             return
         }
+        mtkView = mtkViewTemp
 
         // Select the device to render with.  We choose the default device
         guard let defaultDevice = MTLCreateSystemDefaultDevice() else {
