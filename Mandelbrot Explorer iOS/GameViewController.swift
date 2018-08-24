@@ -44,20 +44,11 @@ class GameViewController: UIViewController {
 
         mtkView.delegate = renderer
     }
-    
-    @IBAction func tapPiece(_ gestureRecognizer : UITapGestureRecognizer ) {
-        guard gestureRecognizer.view != nil else { return }
-        print("tapped")
-    }
-    
+
     @IBAction func scalePiece(_ gestureRecognizer : UIPinchGestureRecognizer) {
-        print("scaling")
         guard gestureRecognizer.view != nil else { return }
         if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
-            let x = Float(mtkView.drawableSize.width / 2)
-            let y = Float(mtkView.drawableSize.height / 2)
-            renderer.zoom(center: [x, y], speed: Float(gestureRecognizer.scale * gestureRecognizer.velocity))
-            //gestureRecognizer.scale = 1.0
+            renderer.zoom(center: [0.5, 0.5], speed: Float(gestureRecognizer.velocity / 5))
         }
     }
     

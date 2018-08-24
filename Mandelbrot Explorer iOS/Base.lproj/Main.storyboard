@@ -20,24 +20,22 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="BKg-qs-eN0"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NEP-da-0Ha" appends="YES" id="0RX-oi-Vhd"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="tMw-iM-14S">
-                    <connections>
-                        <action selector="tapPiece:" destination="BV1-FR-VrT" id="TAb-j8-ql8"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <pinchGestureRecognizer id="NEP-da-0Ha">
-                    <connections>
-                        <action selector="scalePiece:" destination="BV1-FR-VrT" id="4W4-uy-r4J"/>
-                    </connections>
-                </pinchGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="46j-NA-1lA">
                     <connections>
                         <action selector="panPiece:" destination="BV1-FR-VrT" id="ROc-sg-I9X"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="NEP-da-0Ha">
+                    <connections>
+                        <action selector="scalePiece:" destination="BV1-FR-VrT" id="4W4-uy-r4J"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
         </scene>
     </scenes>

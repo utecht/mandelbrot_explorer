@@ -33,7 +33,7 @@ class GameViewController: UIViewController {
         mtkView.device = defaultDevice
         mtkView.backgroundColor = UIColor.black
 
-        guard let newRenderer = Renderer(metalKitView: mtkView) else {
+        guard let newRenderer = Renderer(mtkView: mtkView) else {
             print("Renderer cannot be initialized")
             return
         }
