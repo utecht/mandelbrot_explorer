@@ -20,8 +20,18 @@ class Renderer: NSObject, MTKViewDelegate {
     var scale: float2 = [3.5, 2.0]
     var rotation = 0
     var should_rotate = true
+    var max_iterations = 200
     
     init?(mtkView: MTKView){
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
+            let myDict = NSDictionary(contentsOfFile: path){
+            // Use your myDict here
+            if let c = myDict["MAX_ITERATIONS"] as! Int? {
+                print(c)
+                max_iterations = c
+            }
+        }
+
         device = mtkView.device!
         commandQueue = device.makeCommandQueue()!
         do {
@@ -56,8 +66,8 @@ class Renderer: NSObject, MTKViewDelegate {
             return float4(values[0], values[1], values[2], 1.0)
         }
         
-        for index in 0..<1000{
-            let h: Float = (sqrt((Float(index) / 1000.0)) * 360.0)
+        for index in 0..<max_iterations{
+            let h: Float = (sqrt((Float(index) / Float(max_iterations))) * 360.0)
             let s: Float = 76.0
             let v: Float = 76.0
             palette.append(rgb(h: h, s: s, v: v))
@@ -98,9 +108,10 @@ class Renderer: NSObject, MTKViewDelegate {
         renderEncoder.setFragmentBytes(window_size, length: window_size.count * MemoryLayout<Float>.stride, index: 1)
         renderEncoder.setFragmentBytes([scale, origin], length: 2 * MemoryLayout<float2>.stride, index: 2)
         if should_rotate {
-            rotation = (rotation + 1) % 1000
+            rotation = (rotation + 1) % max_iterations
         }
-        renderEncoder.setFragmentBytes([rotation], length: MemoryLayout<int4>.stride, index: 3)
+        renderEncoder.setFragmentBytes([rotation], length: MemoryLayout<integer_t>.stride, index: 3)
+        renderEncoder.setFragmentBytes([max_iterations], length: MemoryLayout<integer_t>.stride, index: 4)
         renderEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 6)
         renderEncoder.endEncoding()
         commandBuffer.present(view.currentDrawable!)

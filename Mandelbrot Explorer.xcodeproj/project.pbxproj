@@ -29,6 +29,7 @@
 		7C3FF987212F697600740D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94F212F697500740D00 /* Assets.xcassets */; };
 		7C3FF988212F697600740D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94F212F697500740D00 /* Assets.xcassets */; };
 		7C3FF989212F697600740D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF94F212F697500740D00 /* Assets.xcassets */; };
+		7CE6F187212FB13700BF7825 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FF97D212F697600740D00 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -266,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE6F187212FB13700BF7825 /* Info.plist in Resources */,
 				7C3FF97C212F697600740D00 /* Main.storyboard in Resources */,
 				7C3FF989212F697600740D00 /* Assets.xcassets in Resources */,
 				7C3FF986212F697600740D00 /* ShaderTypes.h in Resources */,
