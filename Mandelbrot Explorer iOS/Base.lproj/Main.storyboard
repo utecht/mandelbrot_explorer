@@ -22,6 +22,7 @@
                         <viewLayoutGuide key="safeArea" id="BKg-qs-eN0"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="NEP-da-0Ha" appends="YES" id="0RX-oi-Vhd"/>
+                            <outletCollection property="gestureRecognizers" destination="46j-NA-1lA" appends="YES" id="0RX-oi-Vhx"/>
                         </connections>
                     </view>
                 </viewController>

@@ -48,6 +48,7 @@ class GameViewController: UIViewController {
     @IBAction func scalePiece(_ gestureRecognizer : UIPinchGestureRecognizer) {
         guard gestureRecognizer.view != nil else { return }
         if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
+            print(gestureRecognizer.velocity)
             renderer.zoom(center: [0.5, 0.5], speed: Float(gestureRecognizer.velocity / 5))
         }
     }
